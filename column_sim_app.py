@@ -52,4 +52,5 @@ temps, pressures, top_x, bottom_x = simulate_column(feed_temp, feed_flow, reflux
 col1, col2 = st.columns(2)
 with col1:
     st.metric("Overhead Purity", f"{top_x*100:.2f}%")
-    st.metric("Bottom Purity", f"{bottom_x_
+    st.metric("Bottom Purity", f"{bottom_x*100:.2f}%")
+
